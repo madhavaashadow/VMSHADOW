@@ -93,7 +93,7 @@ async function send() {
 
   chat.innerHTML += "<div class='msg bot' id='loading'>Typing...</div>";
 
-  let res = await fetch("https://YOUR-RENDER-LINK/chat", {
+  let res = await fetch("https://vmshadow.onrender.com/chat", {
     method: "POST",
     headers: {"Content-Type":"application/json"},
     body: JSON.stringify({message: msg, userId: userId})
